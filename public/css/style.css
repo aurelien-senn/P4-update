@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -88,11 +88,13 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 0;
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("../img/texture-paper.png");
     background-size: 280px 280px;
+    z-index:0 ;
 }
 
 .b-parallax {
@@ -129,9 +131,6 @@ a:hover {
 .d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
 }
@@ -146,9 +145,6 @@ a:hover {
 .d-bloc h1 a:hover,
 .d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
@@ -476,7 +472,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .icon-lg {
@@ -506,6 +502,9 @@ button {
 }
 
 .form-control {
+    display: block;
+    width: 95%;
+    border-radius: 10px;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
@@ -700,8 +699,8 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    width: 1em;
+    margin: auto;
 }
 
 h2 {
@@ -781,6 +780,9 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF;
+    width: 95%;
+    border-radius: 10px;
+    border:0px
 }
 
 .btn-atomic-tangerine:hover {
@@ -1046,4 +1048,10 @@ h4 {
 }
 #logo-center-panthere{
     height: 100px;
+}
+.text-median{
+    font-size: 20px;
+}
+.text-plus{
+    font-size: 25px;
 }
